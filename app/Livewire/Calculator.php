@@ -20,8 +20,6 @@ class Calculator extends Component
     {
         $val = "{$this->num1}{$this->operation}{$this->num2};";
 
-        dump($val, eval('return ' . $val));
-
-        $this->result = eval('return' . $val);
+        $this->result =  eval('return ' . $val);
     }
 }
