@@ -1,4 +1,4 @@
-<form wire:submit="calculate">
+<form wire:submit.throttle.1s="calculate">
     <x-text-input placeholder="First number" wire:model="num1"/>
 
     <select wire:model="operation" class="text-slate-700">
