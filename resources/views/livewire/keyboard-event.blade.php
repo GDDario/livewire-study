@@ -12,6 +12,6 @@
     <x-text-input
         placeholder="Do not enter y"
         wire:model="value"
-        wire:keydown.y="replaceYInput"
+        wire:keydown.prevent.y="replaceYInput"
     />
 </div>
