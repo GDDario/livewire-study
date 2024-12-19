@@ -12,6 +12,10 @@
 
     <x-primary-button type="submit">Calculate</x-primary-button>
 
+    <span wire:loading wire:target="calculate" class="text-blue-500 font-bold italic">
+        Calculating...
+    </span>
+
     <br>
     Result: {{$result}}
 </form>

@@ -18,6 +18,8 @@ class Calculator extends Component
 
     public function calculate()
     {
+        sleep(1);
+
         $val = "{$this->num1}{$this->operation}{$this->num2};";
 
         $this->result =  eval('return ' . $val);
