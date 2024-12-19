@@ -24,4 +24,9 @@ class Calculator extends Component
 
         $this->result =  eval('return ' . $val);
     }
+
+    public function add10($prop)
+    {
+        $this->$prop += 10;
+    }
 }
