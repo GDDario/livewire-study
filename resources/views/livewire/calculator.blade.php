@@ -12,6 +12,8 @@
         <x-text-input placeholder="Second number" wire:model="num2"/>
 
         <x-primary-button type="submit">Calculate</x-primary-button>
+        <x-primary-button type="submit" @click="$wire.calculate()">Calculate (alpine)</x-primary-button>
+
 
         <span wire:loading wire:target="calculate" class="text-blue-500 font-bold italic">
         Calculating...
@@ -30,5 +32,7 @@
     <x-primary-button wire:click="add10('num2')">
         Add 10 to num 2
     </x-primary-button>
+
+
 
 </div>
