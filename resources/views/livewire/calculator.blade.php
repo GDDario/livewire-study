@@ -33,6 +33,8 @@
         Add 10 to num 2
     </x-primary-button>
 
-
+    <x-primary-button wire:click="log">
+        Log only
+    </x-primary-button>
 
 </div>
