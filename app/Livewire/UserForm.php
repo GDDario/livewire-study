@@ -16,13 +16,18 @@ class UserForm extends Component
     public string $password;
     public string $passwordConfirmation;
 
-    public function rules(): array {
-        return [
-            'name' => ['required', 'string', 'max:255', 'min:2'],
-            'email' => ['required', 'email', 'max:255', 'min:2'],
-            'password' => ['required', 'confirmed', 'min:2'],
-        ];
-    }
+//    public function rules(): array {
+//        return [
+//            'name' => ['required', 'string', 'max:255', 'min:2'],
+//            'email' => ['required', 'email', 'max:255', 'min:2'],
+//            'password' => ['required', 'confirmed', 'min:2', 'confirmed:passwordConfirmation'],
+//        ];
+//    }
+//
+//    public function updated($attr, $value): void
+//    {
+//        $this->validateOnly($attr);
+//    }
 
     public function render()
     {
